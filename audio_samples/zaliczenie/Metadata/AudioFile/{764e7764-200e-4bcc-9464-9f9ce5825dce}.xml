@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{764e7764-200e-4bcc-9464-9f9ce5825dce}">
+		<property name="assetPath">
+			<value>One shot items/Bed/Bed_1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.90666666666666662</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{a4e11fcb-b492-4f2b-8330-a40ab7f37c65}</destination>
+		</relationship>
+	</object>
+</objects>

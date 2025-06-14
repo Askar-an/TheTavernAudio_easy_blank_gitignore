@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{e47f1325-6a25-4c8e-866c-0962192cd817}">
+		<property name="name">
+			<value>Foot switch</value>
+		</property>
+		<relationship name="folder">
+			<destination>{2da13fe7-841c-42a0-a49f-2b01ab3193f3}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{da175b3d-79de-4967-bd91-0d39b0cbc23a}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{da175b3d-79de-4967-bd91-0d39b0cbc23a}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>stone</value>
+			<value>wood</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
