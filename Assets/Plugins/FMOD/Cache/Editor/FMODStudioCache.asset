@@ -27,6 +27,32 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 51000
+--- !u!114 &-7926915233724332488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Door/Door Switch
+  m_EditorClassIdentifier: 
+  Name: Door Switch
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2625567052
+    data2: 3808518761
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Open
+  - Close
+  Exists: 1
 --- !u!114 &-5680630722898338383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -102,13 +128,15 @@ MonoBehaviour:
   - {fileID: 5383527897043892616}
   - {fileID: 748686864100758884}
   - {fileID: 2235443543223249375}
+  - {fileID: 5837907857132243602}
+  - {fileID: 2876168836410523427}
   EditorParameters: []
   MasterBanks:
   - {fileID: 8095335284827623238}
   StringsBanks:
   - {fileID: 834864781535577061}
   cacheVersion: 131847
-  cacheTime: 638855007992730678
+  cacheTime: 638873152311320818
   SerializableEventsDict:
   - key: event:/ambient_forest
     index: 0
@@ -120,6 +148,10 @@ MonoBehaviour:
     index: 3
   - key: event:/music
     index: 4
+  - key: snapshot:/Outside
+    index: 5
+  - key: event:/Door
+    index: 6
 --- !u!114 &748686864100758884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,10 +194,10 @@ MonoBehaviour:
   Path: audio_samples/zaliczenie/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638855007992730678
+  lastModified: 638873152311320818
   FileSizes:
   - Name: Desktop
-    Value: 1126
+    Value: 1264
   Exists: 1
 --- !u!114 &2235443543223249375
 MonoBehaviour:
@@ -194,6 +226,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 77538
+--- !u!114 &2876168836410523427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Door
+  m_EditorClassIdentifier: 
+  Path: event:/Door
+  Guid:
+    Data1: 56314446
+    Data2: 1157891687
+    Data3: -1477677688
+    Data4: -292836221
+  Banks:
+  - {fileID: 8095335284827623238}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -7926915233724332488}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1110
 --- !u!114 &5383527897043892616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -221,6 +281,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 80000
+--- !u!114 &5837907857132243602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Outside
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Outside
+  Guid:
+    Data1: -978245644
+    Data2: 1239021594
+    Data3: 1915522488
+    Data4: 1350632020
+  Banks:
+  - {fileID: 8095335284827623238}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &8095335284827623238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -236,8 +323,8 @@ MonoBehaviour:
   Path: audio_samples/zaliczenie/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638855007992720628
+  lastModified: 638873152311310825
   FileSizes:
   - Name: Desktop
-    Value: 6111808
+    Value: 6137312
   Exists: 1
