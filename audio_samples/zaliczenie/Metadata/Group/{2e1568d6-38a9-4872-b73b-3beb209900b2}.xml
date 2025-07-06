@@ -7,6 +7,9 @@
 		<property name="name">
 			<value>Outside</value>
 		</property>
+		<relationship name="masters">
+			<destination>{5ed71079-5d76-4dd2-acd9-516fb38d1400}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{a02dadc6-1f45-434f-8061-ce8bf98062cf}</destination>
 		</relationship>
@@ -20,8 +23,10 @@
 	<object class="MixerBusEffectChain" id="{a02dadc6-1f45-434f-8061-ce8bf98062cf}">
 		<relationship name="effects">
 			<destination>{a02f7814-8093-4817-b5b1-022b2bc4a6d8}</destination>
+			<destination>{08d016ea-5862-475b-ac44-81738900fb23}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{c4d9f311-424f-4f4c-987c-9fd36fe7069e}" />
 	<object class="MixerBusFader" id="{a02f7814-8093-4817-b5b1-022b2bc4a6d8}" />
+	<object class="ThreeEQEffect" id="{08d016ea-5862-475b-ac44-81738900fb23}" />
 </objects>
